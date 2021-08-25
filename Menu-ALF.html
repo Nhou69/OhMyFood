@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/sass - css/style.css" />
+    <link rel="stylesheet" href="assets/sass-css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <i class="fas fa-arrow-left"></i>
+        <a href="Accueil.html"><i class="fas fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
     </header>
     <section>
@@ -23,26 +23,36 @@
                 <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo restaurant La palette du goût">
             </figure>
         </header>
-        <form action="">
-        <h1>À la Française</h1><i class="far fa-heart"></i>
+        <form method="post" action="traitement.php">
+        <h2>À la Française</h2><i class="far fa-heart"></i>
             <fieldset>
                 <legend>ENTRÉES</legend>
-                <label>Tartare de poulpe acidulé</label><input type="checkbox" name="entree" id="tartare_poulpe">
-                <label>Velouté de légumes d'antan</label><input type="checkbox" name="entree" id="veloute_legumes">
-                <label>Soupe à l'oignon</label><input type="checkbox" name="entree" id="soupe_oignon">
+                <label for="tartare_poulpe">Tartare de poulpe acidulé</label><input type="checkbox" name="entrees" id="tartare_poulpe"></br>
+                <p>Au zests d'orange</p><p><strong>25€</strong></p>
+                <label for="veloute_legumes">Velouté de légumes d'antan</label><input type="checkbox" name="entrees" id="veloute_legumes"></br>
+                <p>Carotte, panais, topinambour</p><p><strong>35€</strong></p>
+                <label for="soupe_oignon">Soupe à l'oignon</label><input type="checkbox" name="entrees" id="soupe_oignon"></br>
+                <p>Revisitée</p><p><strong>20€</strong></p>
             </fieldset>
             <fieldset>
-                <legend></legend>
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
+                <legend>PLATS</legend>
+                <label for="saint_jacques">Coquilles Saint-Jacques</label><input type="checkbox" name="plats" id="saint_jacques"></br>
+                <p>Accompagnées d'une purée de panais</p><p><strong>40€</strong></p>
+                <label for="magret_canard">Magret de canard</label><input type="checkbox" name="plats" id="magret_canard"></br>
+                <p>et parmentier de pommes de terres</p><p><strong>35€</strong></p>
+                <label for="pigeonneau_IV">Pigeanneau d'Ille-et-Vilaine</label><input type="checkbox" name="plats" id="pigeonneau_IV"></br>
+                <p>Sur son lit de gnocchis aux légumes</p><p><strong>44€</strong></p>
             </fieldset>
             <fieldset>
-                <legend></legend>
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
+                <legend>DESSERTS</legend>
+                <label for="violettes_glaces">Pétales de violettes glacés</label><input type="checkbox" name="desserts" id="violettes_glaces"></br>
+                <p>Et purée de noisettes</p><p><strong>18€</strong></p>
+                <label for="fondant_chocolat">Fondant au chocolat</label><input type="checkbox" name="desserts" id="fondant_chocolat"></br>
+                <p>Revisité</p><p><strong>22€</strong></p>
+                <label for="millefeuille_croustillant">Millefeuille croustillant</label><input type="checkbox" name="desserts" id="millefeuille_croustillant"></br>
+                <p>Myrtilles et pâte d'amande</p><p><strong>23€</strong></p>
             </fieldset>
+            <input type="button" value="Commander" class="validation_commande">
         </form>
     </section>
     <footer>
