@@ -8,7 +8,14 @@
     padding: 16px 24px;
     border-radius: 50px;
     border: none;
+    box-shadow: 0px 10px 10px 0px rgb(185, 185, 185);
     background: linear-gradient(350deg, $color-primary, $color-secondary);
+    &:hover{
+        cursor: pointer;
+        @mixin color-text($color: lightness-shift($color-secondary)){
+        background-color: $color;
+        }
+    }
 }
 
 .btn-fonctionnement{

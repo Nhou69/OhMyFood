@@ -1,7 +1,7 @@
 .bottom-section{
     background-color: $color-sub2;
-    padding-top: 50px;
-    h2{
+    padding: 50px 0;
+    &__title{
         @include title;
         margin: 30px 0 30px 20px;
     }

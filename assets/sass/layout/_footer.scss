@@ -1,0 +1,28 @@
+footer{
+    background-color: $color-sub3;
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 80px 30px;
+    &--title{
+        @include text-medium;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: "Shrikhand";
+        letter-spacing: 1px;
+        color: white;
+    }
+    &__list{
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+        li{
+            padding-bottom: 10px;
+            .fas{
+                width: 20px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
