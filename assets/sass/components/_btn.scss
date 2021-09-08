@@ -1,0 +1,33 @@
+@import "../utils/mixins";
+@import "../utils/variable";
+@import "../utils/functions";
+
+.btn{
+    @include text-medium;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(350deg, $color-primary, $color-secondary);
+}
+
+.btn-fonctionnement{
+    &--num{
+        @include text-small;
+        color: white;
+        padding: 6px 10px;
+        margin-left: -14px;
+        background-color: $color-primary;
+        border-radius: 40px;
+    }
+    .fas{
+        @include icons-size-big;
+        color: gray;
+        
+        padding: 0 25px;
+    }
+    strong{
+        @include text-medium;
+    }
+}
+

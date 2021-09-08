@@ -1,15 +1,16 @@
 @import "../utils/mixins";
+@import "../utils/variable";
 
 .top-section{
     &__location{
-        background-color: rgb(235, 235, 235);
+        background-color: $color-sub1;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         .fas{
             padding-right: 15px;
-            font-size: 1.1rem;
+            @include icons-size-medium;
         }
         p{
             font-size: 1.2rem;
@@ -17,22 +18,44 @@
         }
     }
     &__reservation{
-        background-color: rgb(245, 245, 245);
+        background-color: $color-sub2;
         text-align: center;
+        padding-bottom: 40px;
         h2{
             display: inline-block;
             width: 75%;
-            padding-top: 40px; 
+            padding-top: 50px; 
             margin:0;
             @include title;
         }
         p{
             display: inline-block;
             width: 90%;
-            @include text;
+            @include text-big;
         }
-        .btn{
-            
+    }
+    &__fonction{
+        h2{
+            @include title;
+            margin: 30px 0 30px 20px;
+        }
+        ul{
+            @include center-element-flex;
+            flex-direction: column;
+            padding: 0;
+            li{
+                @include text-medium;  
+                display: flex;
+                align-items: center;       
+                justify-content: left;
+                list-style-type: none;
+                flex-direction: row;
+                background-color: $color-sub2;
+                border-radius: 25px;
+                height: 80px;
+                width: 85%;
+                margin-bottom: 30px;
+            }
         }
     }
 }

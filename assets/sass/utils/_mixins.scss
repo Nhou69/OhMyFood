@@ -3,6 +3,35 @@
     font-weight: 900;
 }
 
-@mixin text{
+@mixin text-big{
     font-size: 1.2rem;
+}
+
+@mixin text-medium{
+    font-size: 1rem;
+}
+
+@mixin text-small{
+    font-size: 0.8rem;
+}
+
+@mixin color-text($color: lightness-shift(white)){
+color: $color;
+}
+
+@mixin center-element-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin icons-size-big{
+    font-size: 1.5rem;
+}
+
+@mixin icons-size-medium{
+    font-size: 1.3rem;
+}
+
+@mixin icons-size-small{
+    font-size: 1rem;
 }
