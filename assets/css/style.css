@@ -1,15 +1,59 @@
 body {
-  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 body main {
   height: 100%;
   width: 375px;
 }
 
+.header {
+  position: relative;
+  box-shadow: 0 0 0.5rem #b9b9b9;
+}
 .header__logo {
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: "Shrikhand";
+  padding: 10px;
+  margin: 0;
+}
+
+.header {
   display: block;
-  height: 50%;
-  width: 50%;
+}
+
+.top-section__location {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.top-section__location .fas {
+  padding-right: 15px;
+  font-size: 1.1rem;
+}
+.top-section__location p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.top-section__reservation {
+  background-color: whitesmoke;
+  text-align: center;
+}
+.top-section__reservation h2 {
+  display: inline-block;
+  width: 75%;
+  padding-top: 40px;
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.top-section__reservation p {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

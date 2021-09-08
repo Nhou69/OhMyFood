@@ -1,0 +1,38 @@
+@import "../utils/mixins";
+
+.top-section{
+    &__location{
+        background-color: rgb(235, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .fas{
+            padding-right: 15px;
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+    &__reservation{
+        background-color: rgb(245, 245, 245);
+        text-align: center;
+        h2{
+            display: inline-block;
+            width: 75%;
+            padding-top: 40px; 
+            margin:0;
+            @include title;
+        }
+        p{
+            display: inline-block;
+            width: 90%;
+            @include text;
+        }
+        .btn{
+            
+        }
+    }
+}
