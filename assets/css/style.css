@@ -1,4 +1,15 @@
-body
-{
-    font-family: 'Roboto', sans-serif;
+body {
+  width: 100%;
 }
+body main {
+  height: 100%;
+  width: 375px;
+}
+
+.header__logo {
+  display: block;
+  height: 50%;
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
