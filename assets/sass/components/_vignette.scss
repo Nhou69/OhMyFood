@@ -2,6 +2,7 @@
     text-align: center;
     margin: 0;
     border-radius: 20px;
+    height: auto;
     @include shadow-box;
     &__img{
         height: 190px;

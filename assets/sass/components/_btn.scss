@@ -51,5 +51,25 @@
     strong{
         @include text-medium;
     }
+    &:hover{
+        background-color: #f2eafb;
+        .fas{
+            color: $color-primary;
+        }
+    }
 }
 
+  
+.new{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: $color-tertiary;
+    color: #008766;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
