@@ -25,6 +25,10 @@ body main {
 
 .icon {
   color: black;
+  font-size: 22px;
+  height: 22px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 .icon:hover {
   animation: fill 1s ease-out;
@@ -59,7 +63,6 @@ body main {
   margin: 0;
   border-radius: 20px;
   box-shadow: 0px 8px 8px 0px #ebebeb;
-  transition: transform 300ms;
 }
 .vignette__img {
   height: 190px;
@@ -68,34 +71,21 @@ body main {
   object-fit: cover;
 }
 .vignette__description {
-  display: grid;
-  justify-content: left;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.vignette__description--title {
-  grid-column: 1;
-  grid-row: 1;
-  margin: 10px 0 4px 10px;
+.vignette .description {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.vignette .description--title {
+  margin: 0 0 5px 0;
+}
+.vignette .description--city {
+  margin: 0;
   text-align: left;
-}
-.vignette__description--city {
-  grid-column: 1;
-  grid-row: 2;
-  text-align: left;
-  margin: 0 0 0 10px;
-}
-.vignette__description .icon {
-  font-size: 20px;
-  display: inline-block;
-  text-align: right;
-  margin: 20px 30px 0 0;
-  grid-column: 2;
-  grid-row: 1;
-}
-.vignette:hover {
-  box-shadow: 0px 0px 4px 2px gray;
-  transform: scale(1.01);
 }
 
 .container {
@@ -114,11 +104,16 @@ body main {
   margin-bottom: 20px;
   background-color: white;
   box-shadow: 0px 0px 15px 5px #ebebeb;
+  transition: transform 350ms;
 }
 .container li a {
   text-decoration: none;
   font-style: initial;
   color: black;
+}
+.container li:hover {
+  box-shadow: 0px 0px 4px 2px gray;
+  transform: scale(1.01);
 }
 
 .container-footer__list--link {

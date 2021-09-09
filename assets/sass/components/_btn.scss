@@ -20,9 +20,13 @@
 
 .icon{
     color: black;
+    font-size: 22px;
+    height: 22px;
+    margin-top: 20px;
+    margin-right: 20px;
     &:hover{
         animation: fill 1s ease-out;
-        background: linear-gradient(to top,$color-primary, $color-secondary);
+        background: linear-gradient(to top, $color-primary, $color-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
