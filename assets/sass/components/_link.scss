@@ -26,5 +26,8 @@
         text-decoration: none;
         font-style: initial;
         color: white;
+        &:hover{
+        color: $color-secondary;
+        }
     }
 }

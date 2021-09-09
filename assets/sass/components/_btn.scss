@@ -4,21 +4,33 @@
 
 .btn{
     @include text-medium;
+    @include shadow-box;
+    font-weight: 300;
     color: white;
     padding: 16px 24px;
     border-radius: 50px;
     border: none;
-    box-shadow: 0px 10px 10px 0px rgb(185, 185, 185);
     background: linear-gradient(350deg, $color-primary, $color-secondary);
     &:hover{
         cursor: pointer;
-        @mixin color-text($color: lightness-shift($color-secondary)){
-        background-color: $color;
-        }
+        background: linear-gradient(350deg, lighten($color-primary, 5), lighten($color-secondary, 5));
+        @include shadow-box-transform;
+    }
+}
+
+.icon{
+    color: black;
+    &:hover{
+        animation: fill 1s ease-out;
+        background: linear-gradient(to top,$color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
     }
 }
 
 .btn-fonctionnement{
+    @include shadow-box;
     &--num{
         @include text-small;
         color: white;
@@ -30,7 +42,6 @@
     .fas{
         @include icons-size-big;
         color: gray;
-        
         padding: 0 25px;
     }
     strong{

@@ -9,17 +9,34 @@ body main {
 
 .btn {
   font-size: 1rem;
+  box-shadow: 0px 8px 8px 0px #ebebeb;
+  font-weight: 300;
   color: white;
   padding: 16px 24px;
   border-radius: 50px;
   border: none;
-  box-shadow: 0px 10px 10px 0px #b9b9b9;
   background: linear-gradient(350deg, #9356DC, #FF79DA);
 }
 .btn:hover {
   cursor: pointer;
+  background: linear-gradient(350deg, #a16be0, #ff93e1);
+  box-shadow: 0px 0px 4px 2px gray;
 }
 
+.icon {
+  color: black;
+}
+.icon:hover {
+  animation: fill 1s ease-out;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.btn-fonctionnement {
+  box-shadow: 0px 8px 8px 0px #ebebeb;
+}
 .btn-fonctionnement--num {
   font-size: 0.8rem;
   color: white;
@@ -40,6 +57,9 @@ body main {
 .vignette {
   text-align: center;
   margin: 0;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px 0px #ebebeb;
+  transition: transform 300ms;
 }
 .vignette__img {
   height: 190px;
@@ -66,10 +86,16 @@ body main {
   margin: 0 0 0 10px;
 }
 .vignette__description .icon {
-  font-size: 1.5rem;
-  margin: -15px 0 0 80px;
+  font-size: 20px;
+  display: inline-block;
+  text-align: right;
+  margin: 20px 30px 0 0;
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
+}
+.vignette:hover {
+  box-shadow: 0px 0px 4px 2px gray;
+  transform: scale(1.01);
 }
 
 .container {
@@ -100,6 +126,9 @@ body main {
   font-style: initial;
   color: white;
 }
+.container-footer__list--link:hover {
+  color: #FF79DA;
+}
 
 .header {
   position: relative;
@@ -109,7 +138,7 @@ body main {
 .header__logo {
   font-size: 2rem;
   text-align: center;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
   letter-spacing: 1px;
   padding: 10px;
   margin: 0;
@@ -163,7 +192,7 @@ footer {
 .top-section__reservation {
   background-color: whitesmoke;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 .top-section__reservation h2 {
   display: inline-block;
