@@ -7,6 +7,14 @@ body main {
   height: 100%;
 }
 
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn {
   font-size: 1rem;
   box-shadow: 0px 8px 8px 0px #ebebeb;
@@ -23,14 +31,14 @@ body main {
   box-shadow: 0px 0px 4px 2px gray;
 }
 
-.icon {
+.icon-heart {
   color: black;
   font-size: 22px;
   height: 22px;
   margin-top: 20px;
   margin-right: 20px;
 }
-.icon:hover {
+.icon-heart:hover {
   animation: fill 1s ease-out;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -64,7 +72,7 @@ body main {
   color: #9356DC;
 }
 
-.new {
+.stick-new {
   display: inline-block;
   display: flex;
   align-items: center;
@@ -126,6 +134,7 @@ body main {
   background-color: white;
   box-shadow: 0px 0px 15px 5px #ebebeb;
   transition: transform 350ms;
+  position: relative;
 }
 .container li a {
   text-decoration: none;
