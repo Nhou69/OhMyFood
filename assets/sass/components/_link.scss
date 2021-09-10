@@ -15,11 +15,6 @@
         box-shadow: 0px 0px 15px 5px $color-sub1;
         transition: transform 350ms;
         position: relative;
-        a{
-            text-decoration: none;
-            font-style: initial;
-            color: black;
-        }
         &:hover{
             @include shadow-box-transform;
             transform: scale(1.01);

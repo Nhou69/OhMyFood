@@ -7,6 +7,15 @@ body main {
   height: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes fill {
   0% {
     opacity: 0;
@@ -136,11 +145,6 @@ body main {
   transition: transform 350ms;
   position: relative;
 }
-.container li a {
-  text-decoration: none;
-  font-style: initial;
-  color: black;
-}
 .container li:hover {
   box-shadow: 0px 0px 4px 2px gray;
   transform: scale(1.01);
@@ -266,6 +270,20 @@ footer {
   font-size: 1.7rem;
   font-weight: 900;
   margin: 30px 0 30px 20px;
+}
+
+.mr-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px 10px 25px;
+}
+.mr-header .link-arrow {
+  font-size: 24px;
+  height: 26px;
+  width: 22px;
+}
+.mr-header .header__logo {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
