@@ -24,6 +24,14 @@ a {
     opacity: 1;
   }
 }
+@keyframes rotate-center-check {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   font-size: 1rem;
   box-shadow: 0px 8px 8px 0px #ebebeb;
@@ -338,22 +346,33 @@ footer {
   width: 90%;
   height: 80px;
   box-shadow: 0px 8px 8px 0px #ebebeb;
+  overflow: hidden;
 }
 .corps-menu__plat .price {
-  margin: 0 10px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.corps-menu__plat .bg-check {
+  background: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  height: 100%;
+  width: 70px;
+  margin-right: -70px;
+  transition: all 0.4s ease-in-out;
+}
+.corps-menu__plat:hover .bg-check {
+  cursor: pointer;
+  margin-right: 0;
+}
+.corps-menu__plat:hover .check {
+  animation: rotate-center-check 0.5s ease-in-out;
 }
 .corps-menu__plat .check {
   text-align: center;
   color: white;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
   font-size: 26px;
   height: 100%;
   width: 70px;
-  display: none;
-}
-.corps-menu__plat:hover .check {
-  display: initial;
   display: flex;
   justify-content: center;
   align-items: center;

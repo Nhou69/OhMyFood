@@ -61,33 +61,36 @@
         width: 90%;
         height: 80px;
         @include shadow-box;
+        overflow: hidden;
         .price{
-            margin: 0 10px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        .bg-check{
+            background: $color-tertiary;
+            border-radius: 0 20px 20px 0;
+            height: 100%;
+            width: 70px;
+            margin-right: -70px;
+            transition: all 0.4s ease-in-out;
+        }
+        &:hover .bg-check{
+            cursor: pointer;
+            margin-right: 0;
+        }
+        &:hover .check{
+            animation: rotate-center-check 0.5s ease-in-out;
         }
         .check{
             text-align: center;
             color: white;
-            background-color: $color-tertiary;
-            border-radius: 0 20px 20px 0;
             font-size: 26px;
             height: 100%;
             width: 70px;
-            display: none;
-        }
-        &:hover .check{
-            display: initial;
             @include center-element-flex;
         }
     }
 }
-
-
-
-
-
-
-
-
 
 .plat{
     white-space: nowrap;
