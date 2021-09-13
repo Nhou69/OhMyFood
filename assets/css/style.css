@@ -312,6 +312,7 @@ footer {
 .corps-menu {
   margin: auto;
   background-color: whitesmoke;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
@@ -333,32 +334,51 @@ footer {
   background-color: white;
   border-radius: 20px;
   padding: 0px 0 0px 20px;
-  margin: 20px 0 20px 0;
+  margin: 20px auto 20px auto;
   width: 90%;
   height: 80px;
   box-shadow: 0px 8px 8px 0px #ebebeb;
 }
-
-.plat--title {
-  margin: 0;
+.corps-menu__plat .price {
+  margin: 0 10px;
 }
-.plat--desc {
-  margin: 0;
-}
-
-.check {
+.corps-menu__plat .check {
   text-align: center;
   color: white;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   font-size: 26px;
   height: 100%;
-  width: 50px;
+  width: 70px;
+  display: none;
+}
+.corps-menu__plat:hover .check {
+  display: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plat {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat--title {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat--desc {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .restaurant-name {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
   align-items: center;
 }
 .restaurant-name__title {
