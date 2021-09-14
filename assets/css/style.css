@@ -24,6 +24,14 @@ a {
     opacity: 1;
   }
 }
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 @keyframes rotate-center-check {
   0% {
     transform: rotate(0);
@@ -32,6 +40,54 @@ a {
     transform: rotate(360deg);
   }
 }
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.appears-opacity {
+  animation: opacity 1s both;
+}
+
+#case-1 {
+  animation-delay: 0.1s;
+}
+
+#case-2 {
+  animation-delay: 0.2s;
+}
+
+#case-3 {
+  animation-delay: 0.3s;
+}
+
+#case-4 {
+  animation-delay: 0.4s;
+}
+
+#case-5 {
+  animation-delay: 0.5s;
+}
+
+#case-6 {
+  animation-delay: 0.6s;
+}
+
+#case-7 {
+  animation-delay: 0.7s;
+}
+
+#case-8 {
+  animation-delay: 0.8s;
+}
+
+#case-9 {
+  animation-delay: 0.9s;
+}
+
 .btn {
   font-size: 1rem;
   box-shadow: 0px 8px 8px 0px #ebebeb;
@@ -325,9 +381,19 @@ footer {
   flex-direction: column;
 }
 .corps-menu--title {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 34px;
   font-weight: initial;
   font-size: 1.2rem;
+}
+.corps-menu--title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #99E2D0;
+  animation: progress 2s;
+  animation-fill-mode: both;
+  transform: scale(0);
 }
 .corps-menu--list {
   margin: auto;
@@ -347,6 +413,7 @@ footer {
   height: 80px;
   box-shadow: 0px 8px 8px 0px #ebebeb;
   overflow: hidden;
+  cursor: pointer;
 }
 .corps-menu__plat .price {
   margin-left: auto;
@@ -361,7 +428,6 @@ footer {
   transition: all 0.4s ease-in-out;
 }
 .corps-menu__plat:hover .bg-check {
-  cursor: pointer;
   margin-right: 0;
 }
 .corps-menu__plat:hover .check {
@@ -384,7 +450,9 @@ footer {
   text-overflow: ellipsis;
 }
 .plat--title {
+  font-size: 1.2rem;
   margin: 0;
+  padding-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -407,6 +475,14 @@ footer {
 }
 .restaurant-name__like {
   margin: 0;
+}
+
+.order {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,9 +40,19 @@
     display: flex;
     flex-direction: column;
     &--title{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 34px;
         font-weight: initial;
         @include text-big;
+        &::after{
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: $color-tertiary;
+            animation: progress 2s;
+            animation-fill-mode: both;
+            transform: scale(0);
+        }
     }
     &--list{
         margin: auto;
@@ -62,6 +72,7 @@
         height: 80px;
         @include shadow-box;
         overflow: hidden;
+        cursor: pointer;
         .price{
             margin-left: auto;
             margin-right: 20px;
@@ -75,7 +86,6 @@
             transition: all 0.4s ease-in-out;
         }
         &:hover .bg-check{
-            cursor: pointer;
             margin-right: 0;
         }
         &:hover .check{
@@ -97,7 +107,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     &--title{
+        @include text-big;
         margin: 0;
+        padding-bottom: 5px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -107,8 +119,6 @@
         text-overflow: ellipsis;
     }
 }
-
-
 .restaurant-name{
     display: flex;
     justify-content: space-between;
@@ -122,4 +132,10 @@
     &__like{
         margin: 0;
     }
+}
+
+.order{
+    background-color: $color-sub2;
+    @include center-element-flex;
+    padding: 20px 0 40px 0;
 }
