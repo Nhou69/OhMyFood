@@ -9,15 +9,6 @@
     }
 }
 
-@keyframes progress{
-    0%{
-        transform: scaleX(0);
-    }
-    100%{
-        transform: scaleX(1);
-    }
-}
-
 //Animation qui fait tourner à 360° le check
 @keyframes rotate-center-check{
     0% {

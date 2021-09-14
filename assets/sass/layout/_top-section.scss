@@ -43,6 +43,7 @@
             @include center-element-flex;
             flex-direction: column;
             padding: 0;
+            margin-bottom: 30px;
             li{
                 @include text-medium;  
                 display: flex;

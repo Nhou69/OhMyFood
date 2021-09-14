@@ -4,7 +4,7 @@ footer{
 .container-footer{
     display: flex;
     flex-direction: column;
-    padding: 25px 0 80px 30px;
+    padding: 25px 30px 80px 30px;
     &--title{
         @include text-medium;
         margin-top: 0;
@@ -14,6 +14,8 @@ footer{
         color: white;
     }
     &__list{
+        display: flex;
+        flex-direction: column;
         list-style-type: none;
         padding-left: 0;
         margin: 0;
@@ -22,6 +24,14 @@ footer{
             .fas{
                 width: 20px;
                 padding-right: 10px;
+            }
+        }
+        &--link{
+            text-decoration: none;
+            font-style: initial;
+            color: white;
+            &:hover{
+            color: $color-secondary;
             }
         }
     }

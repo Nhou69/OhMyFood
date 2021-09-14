@@ -1,9 +1,0 @@
-//fonction qui permet de changer la couleur du background selon la couleur
-@function lightness-shift($color){
-    @if (lightness($color) < 25% ) {
-        @return lighten($color, 50%);
-    }
-    @else{
-        @return darken($color, 50%);
-    }
-}

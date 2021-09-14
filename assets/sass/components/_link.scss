@@ -22,13 +22,3 @@
     }
 }
 
-.container-footer__list{
-    &--link{
-        text-decoration: none;
-        font-style: initial;
-        color: white;
-        &:hover{
-        color: $color-secondary;
-        }
-    }
-}

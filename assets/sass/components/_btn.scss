@@ -1,7 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variable";
-@import "../utils/functions";
 
+//bouton du Explorer
 .btn{
     @include text-medium;
     @include shadow-box;
@@ -18,21 +18,7 @@
     }
 }
 
-.icon-heart{
-    color: black;
-    font-size: 22px;
-    height: 22px;
-    margin-top: 20px;
-    margin-right: 20px;
-    &:hover{
-        animation: fill 1s ease-out;
-        background: linear-gradient(to top, $color-primary, $color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
-    }
-}
-
+//bouton du bloc fonctionnement
 .btn-fonctionnement{
     @include shadow-box;
     &--num{
@@ -58,7 +44,26 @@
         }
     }
 }
-  
+
+
+//Bouton du coeur
+.icon-heart{
+    color: black;
+    font-size: 22px;
+    height: 22px;
+    margin-top: 20px;
+    margin-right: 20px;
+    &:hover{
+        cursor: pointer;
+        animation: fill 1s ease-out;
+        background: linear-gradient(to top, $color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+}
+
+//Sticker "Nouveau"
 .stick-new{
     display: inline-block;
     display: flex;

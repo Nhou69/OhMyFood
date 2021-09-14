@@ -1,8 +1,6 @@
 .body-page{
     width: 100%;
 }
-
-
 .mr-header{
     display: flex;
     align-items: center;
@@ -101,7 +99,6 @@
         }
     }
 }
-
 .plat{
     white-space: nowrap;
     overflow: hidden;
@@ -133,7 +130,7 @@
         margin: 0;
     }
 }
-
+//bouton 'commmander'
 .order{
     background-color: $color-sub2;
     @include center-element-flex;
