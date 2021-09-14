@@ -24,6 +24,14 @@ a {
     opacity: 1;
   }
 }
+@keyframes underline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 @keyframes rotate-center-check {
   0% {
     transform: rotate(0);
@@ -404,6 +412,10 @@ footer {
   object-fit: cover;
 }
 
+.body-menu {
+  background-color: whitesmoke;
+}
+
 .restaurant {
   margin-top: -60px;
   position: relative;
@@ -413,7 +425,6 @@ footer {
 
 .corps-menu {
   margin: auto;
-  background-color: whitesmoke;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -429,7 +440,7 @@ footer {
   width: 50px;
   height: 3px;
   background-color: #99E2D0;
-  animation: progress 2s;
+  animation: underline 2s;
   animation-fill-mode: both;
   transform: scale(0);
 }
@@ -445,8 +456,8 @@ footer {
   align-items: center;
   background-color: white;
   border-radius: 20px;
-  padding: 0px 0 0px 20px;
-  margin: 20px auto 20px auto;
+  padding: 0px 0px 0px 20px;
+  margin: 20px auto;
   width: 90%;
   height: 80px;
   box-shadow: 0px 8px 8px 0px #ebebeb;
@@ -455,7 +466,8 @@ footer {
 }
 .corps-menu__plat .price {
   margin-left: auto;
-  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 15px;
 }
 .corps-menu__plat .bg-check {
   background: #99E2D0;
@@ -476,7 +488,7 @@ footer {
   color: white;
   font-size: 26px;
   height: 100%;
-  width: 70px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,11 +503,13 @@ footer {
   font-size: 1.2rem;
   margin: 0;
   padding-bottom: 5px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .plat--desc {
   margin: 0;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -516,11 +530,28 @@ footer {
 }
 
 .order {
-  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0 40px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .body-menu {
+    margin: auto;
+    max-width: 1200px;
+  }
+  .body-menu__suggestion {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .corps-menu {
+    width: 340px;
+  }
+  .corps-menu__plat {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

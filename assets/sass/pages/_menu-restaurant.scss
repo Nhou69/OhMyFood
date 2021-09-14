@@ -25,6 +25,9 @@
     width: 100%;
     object-fit: cover;
 }
+.body-menu{
+    background-color: $color-sub2;
+}
 .restaurant{
     margin-top: -60px;
     position: relative;
@@ -33,7 +36,6 @@
 }
 .corps-menu{
     margin: auto;
-    background-color: $color-sub2;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -47,7 +49,7 @@
             width: 50px;
             height: 3px;
             background-color: $color-tertiary;
-            animation: progress 2s;
+            animation: underline 2s;
             animation-fill-mode: both;
             transform: scale(0);
         }
@@ -64,8 +66,8 @@
         align-items: center;
         background-color: white;
         border-radius: 20px;
-        padding: 0px 0 0px 20px;
-        margin: 20px auto 20px auto;
+        padding: 0px 0px 0px 20px;
+        margin: 20px auto;
         width: 90%;
         height: 80px;
         @include shadow-box;
@@ -73,7 +75,8 @@
         cursor: pointer;
         .price{
             margin-left: auto;
-            margin-right: 20px;
+            padding-left: 5px;
+            padding-right: 15px;
         }
         .bg-check{
             background: $color-tertiary;
@@ -94,7 +97,7 @@
             color: white;
             font-size: 26px;
             height: 100%;
-            width: 70px;
+            width: 100%;
             @include center-element-flex;
         }
     }
@@ -107,11 +110,13 @@
         @include text-big;
         margin: 0;
         padding-bottom: 5px;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
     &--desc{
         margin: 0;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -132,7 +137,23 @@
 }
 //bouton 'commmander'
 .order{
-    background-color: $color-sub2;
     @include center-element-flex;
     padding: 20px 0 40px 0;
+}
+
+@media screen and(min-width: 1024px){
+    .body-menu{
+        margin: auto;
+        max-width: 1200px;
+        &__suggestion{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .corps-menu{
+        width: 340px;
+        &__plat{
+            width: 90%;
+        }
+    }
 }

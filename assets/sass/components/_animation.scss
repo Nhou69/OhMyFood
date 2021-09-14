@@ -8,6 +8,15 @@
         opacity: 1;
     }
 }
+//Animation ligne verte
+@keyframes underline{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
 
 //Animation qui fait tourner à 360° le check
 @keyframes rotate-center-check{
