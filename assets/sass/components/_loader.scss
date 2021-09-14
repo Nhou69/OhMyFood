@@ -1,0 +1,71 @@
+.loader{
+    height: 100%;
+    background-color:white;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    animation: loader-animation 3.5s linear ;
+    top: 0; left: 0; right: 0; bottom: 0;
+    visibility: hidden;
+    &__border {
+        @include center-element-flex;
+        border: 6px solid transparent;
+        border-left: none;
+        border-right: none;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        animation: loader-rotation 3s linear ;
+        z-index: 1;
+        visibility: hidden;
+    }
+    &__center {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $color-tertiary;
+    }
+}
+  
+// Animation Loading spinner //
+@keyframes loader-animation {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes loader-rotation {
+    0%{
+        transform: rotate(0deg) scale(1);
+        border-top-color: $color-primary;
+        border-bottom-color: $color-secondary;
+        visibility: visible;
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(360deg) scale(1.4);
+        border-top-color: $color-secondary;
+        border-bottom-color: $color-primary;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(720deg) scale(1);
+        border-top-color: $color-primary;
+        border-bottom-color: $color-secondary;
+        opacity: 0;
+        //visibility: hidden;
+    }
+}
