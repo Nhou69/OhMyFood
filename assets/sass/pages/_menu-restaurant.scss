@@ -133,6 +133,9 @@
         text-overflow: ellipsis;
     }
 }
+.appears-opacity {
+    animation: opacity 1s both;
+}
 
 //bouton 'commmander'
 .order{

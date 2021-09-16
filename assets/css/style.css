@@ -49,10 +49,6 @@ a {
     opacity: 1;
   }
 }
-.appears-opacity {
-  animation: opacity 1s both;
-}
-
 #case-1 {
   animation-delay: 0.1s;
 }
@@ -295,6 +291,7 @@ a {
     border-top-color: #9356DC;
     border-bottom-color: #FF79DA;
     opacity: 0;
+    visibility: hidden;
   }
 }
 .header {
@@ -604,6 +601,10 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.appears-opacity {
+  animation: opacity 1s both;
 }
 
 .order {
